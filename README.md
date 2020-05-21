@@ -207,13 +207,13 @@ Unzip the bundle contents into a folder `migrated_app`. Now, let us add the sour
 
 Clone this repo by running the below command:
 ```
-git clone https://github.com/IBM/migrate-app-to-openshift-using-cp4a
+git clone https://github.com/IBMDevConnect/cp4atalab
 ```
-This creates a folder `migrate-app-to-openshift-using-cp4a` with all the contents from the repo.
+This creates a folder `cp4talab` with all the contents from the repo.
 
 Let us now copy the sources and dependencies to the `migrated-app` folder:
-- Copy the folder `migrate-app-to-openshift-using-cp4a/src` with contents to `migrated_app` folder.
-- Copy the file `migrate-app-to-openshift-using-cp4a/pom.xml` to `migrated_app` folder. Modify the configuration for the `maven-war-plugin` in the `pom.xml` as shown below:
+- Copy the folder `cp4talab/src` with contents to `migrated_app` folder.
+- Copy the file `cp4talab/pom.xml` to `migrated_app` folder. Modify the configuration for the `maven-war-plugin` in the `pom.xml` as shown below:
 ```
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -226,7 +226,7 @@ Let us now copy the sources and dependencies to the `migrated-app` folder:
         </configuration>
       </plugin>
  ```
-- Copy the contents under the folder `migrate-app-to-openshift-using-cp4a/WebContent` to `migrated_app/src/main/webapp`.
+- Copy the contents under the folder `cp4talab/WebContent` to `migrated_app/src/main/webapp`.
 - Modify the file `location` attribute of the application tag in the file `migrated_app/src/main/liberty/config/server.xml` as shown below:
 ```
 <application id="modresorts" location="modresorts-1.0.war" name="modresorts-1_0_war" type="war"/>
