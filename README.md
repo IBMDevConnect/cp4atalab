@@ -242,23 +242,6 @@ If you wish to move the migrated bundle to a GitHub repo and then deploy the app
 
 ***Login to IBM Managed OpenShift Cluster using CLI***
 
-Go to `IBM Cloud Dashboard > Clusters > Click on your OpenShift Cluster > OpenShift web console` as shown.
-
-![openshift-web-console](doc/source/images/openshift-web-console.png)
-
-It will open a OpenShift web console for you. Get the login command from console as shown in the below snapshot.
-
-![copy-login-command](doc/source/images/copy-login-command.png)
-
-Go to terminal and paste the copied login command. You will get logged into your OpenShift cluster.
-
-```
-   $ oc login https://xxx.containers.cloud.ibm.com:xxx --token=xxxx
-   Logged into "https://xxx.containers.cloud.ibm.com:xxx" as "xxxx" using the token provided.
-   
-   # Create a new project to run your application
-   $ oc new-project <project-name>
-```
 
 If you have pushed your migration bundle into Github repo, then you got directly to section *Deploy the app using Github repo* and follow the steps.
 
